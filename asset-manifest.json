@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/millionadahomepage/static/css/main.633f5ac5.chunk.css",
-    "main.js": "/millionadahomepage/static/js/main.da80b11f.chunk.js",
-    "main.js.map": "/millionadahomepage/static/js/main.da80b11f.chunk.js.map",
-    "runtime-main.js": "/millionadahomepage/static/js/runtime-main.e0d84cd2.js",
-    "runtime-main.js.map": "/millionadahomepage/static/js/runtime-main.e0d84cd2.js.map",
-    "static/js/2.90d3dfdb.chunk.js": "/millionadahomepage/static/js/2.90d3dfdb.chunk.js",
-    "static/js/2.90d3dfdb.chunk.js.map": "/millionadahomepage/static/js/2.90d3dfdb.chunk.js.map",
-    "static/js/3.8d642024.chunk.js": "/millionadahomepage/static/js/3.8d642024.chunk.js",
-    "static/js/3.8d642024.chunk.js.map": "/millionadahomepage/static/js/3.8d642024.chunk.js.map",
+    "main.css": "/millionadahomepage/static/css/main.1b5c2ba2.chunk.css",
+    "main.js": "/millionadahomepage/static/js/main.c74c839f.chunk.js",
+    "main.js.map": "/millionadahomepage/static/js/main.c74c839f.chunk.js.map",
+    "runtime-main.js": "/millionadahomepage/static/js/runtime-main.8dbc3918.js",
+    "runtime-main.js.map": "/millionadahomepage/static/js/runtime-main.8dbc3918.js.map",
+    "static/js/2.f67100ed.chunk.js": "/millionadahomepage/static/js/2.f67100ed.chunk.js",
+    "static/js/2.f67100ed.chunk.js.map": "/millionadahomepage/static/js/2.f67100ed.chunk.js.map",
+    "static/js/3.bed9c983.chunk.js": "/millionadahomepage/static/js/3.bed9c983.chunk.js",
+    "static/js/3.bed9c983.chunk.js.map": "/millionadahomepage/static/js/3.bed9c983.chunk.js.map",
     "index.html": "/millionadahomepage/index.html",
-    "static/css/main.633f5ac5.chunk.css.map": "/millionadahomepage/static/css/main.633f5ac5.chunk.css.map",
-    "static/js/2.90d3dfdb.chunk.js.LICENSE.txt": "/millionadahomepage/static/js/2.90d3dfdb.chunk.js.LICENSE.txt"
+    "static/css/main.1b5c2ba2.chunk.css.map": "/millionadahomepage/static/css/main.1b5c2ba2.chunk.css.map",
+    "static/js/2.f67100ed.chunk.js.LICENSE.txt": "/millionadahomepage/static/js/2.f67100ed.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e0d84cd2.js",
-    "static/js/2.90d3dfdb.chunk.js",
-    "static/css/main.633f5ac5.chunk.css",
-    "static/js/main.da80b11f.chunk.js"
+    "static/js/runtime-main.8dbc3918.js",
+    "static/js/2.f67100ed.chunk.js",
+    "static/css/main.1b5c2ba2.chunk.css",
+    "static/js/main.c74c839f.chunk.js"
   ]
 }
