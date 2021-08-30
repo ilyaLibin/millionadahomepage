@@ -21,16 +21,6 @@ const {
   HowItWorksModal, Matrix, SocialLinks, PurchaseDialog
 } = components;
 
-const toastConfigs = {
-  duration: null, isClosable: false, title: "Account created.", position: "bottom", };
-
-
-const Btn = () => (<Button colorScheme="teal"
-  bgGradient="linear(to-r, teal.500,green.500)"
-  _hover={{
-    bgGradient: "linear(to-r, red.500, yellow.500)",
-  }}>Purchase</Button>)
-
 function App() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -48,33 +38,9 @@ function App() {
     setState({...state, selectedItems: items })
     const amountOfSelectedItems = state.selectedItems.length;
     if (amountOfSelectedItems > 0) {
-      // updateToast(amountOfSelectedItems)
+
     }
   }
-
-  // const toast = useToast()
-  // const toastIdRef = React.useRef()
-
-  // function updateToast(amount) {
-  //   const adaPrice = (amount * 100).toLocaleString('en', { useGrouping: true })
-  //   const description = {
-  //     render: () => (
-  //       <Box color="white" p={5}>
-  //         {'₳' + adaPrice}
-  //         <Alert status="info">
-  //           <AlertTitle> A new version is available! </AlertTitle>
-  //           <Button onClick={() => {}}> Reload </Button>
-  //         </Alert>
-  //       </Box>
-  //     ),
-  //   }
-
-  //   if (toastIdRef.current) {
-  //     toast.update(toastIdRef.current, { ...description, ...toastConfigs })
-  //   } else {
-  //     toastIdRef.current = toast({ ...description, ...toastConfigs  })
-  //   }
-  // }
 
   useEffect(() => {
     // handle onboarding flow - how it works modal

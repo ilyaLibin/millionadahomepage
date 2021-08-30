@@ -3,8 +3,6 @@ import {
   Text,
   Button,
   Center,
-  Badge,
-  StarIcon,
   Kbd
 } from '@chakra-ui/react';
 import classNames from 'classnames';
@@ -14,7 +12,7 @@ function PurchaseDialog({amount}) {
 
   const dialogClassnames = classNames({
     'purchase-dialog': true,
-    hidden: amount === 0
+    'not-active': amount === 0
   })
   return (
     <div className={dialogClassnames}>

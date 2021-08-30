@@ -174,7 +174,8 @@ html, body {
   transition: bottom 1s, opacity 1s;
 }
 
-.purchase-dialog.hidden {
+.purchase-dialog.not-active {
   bottom: -250px;
   opacity: 0;
+  transition: bottom 1s, opacity 1s;
 }

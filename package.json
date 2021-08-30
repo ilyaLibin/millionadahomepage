@@ -1,8 +1,8 @@
 {
-  "name": "pixellord-chakra",
+  "name": "millionadahomepage",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ilyaLibin.github.io/pixel-lord-fe",
+  "homepage": "http://ilyalibin.github.io/millionadahomepage",
   "dependencies": {
     "@chakra-ui/react": "^1.0.0",
     "@emotion/react": "^11.0.0",
@@ -41,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }

@@ -1,5 +1,5 @@
 import { RiDiscordLine, RiTwitterFill } from 'react-icons/ri';
-import { Icon, Link, Text } from "@chakra-ui/react"
+import { Icon, Link } from "@chakra-ui/react"
 
 function Socials() {
   return (
