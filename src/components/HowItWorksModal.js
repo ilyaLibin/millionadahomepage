@@ -8,7 +8,6 @@ import {
   ModalBody,
   ModalCloseButton,
   Button,
-  Lorem
 } from "@chakra-ui/react"
 
 const HowItWorksModal = (props) => {

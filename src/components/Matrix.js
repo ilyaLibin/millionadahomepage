@@ -3,7 +3,7 @@ import List from './List';
 
 const array = Array.from(Array(10000).keys());
 
-function Matrix() {
+function Matrix({ duringSelection, onSelectionFinish }) {
   return (
     <SelectableGroup
       deselectOnEsc={true}
@@ -14,10 +14,10 @@ function Matrix() {
       tolerance={0}
       globalMouse={true}
       allowClickWithoutSelected={true}
-      duringSelection={() => {}}
+      duringSelection={duringSelection}
       onSelectionClear={() => { }}
-      onSelectionFinish={() => {}}
-      onSelectedItemUnmount={() => { }}
+      onSelectionFinish={onSelectionFinish}
+      onSelectedItemUnmount={() => {}}
       ignoreList={['.not-selectable', '.sold', '.on-sale']}>
       <List items={array} />
     </SelectableGroup>

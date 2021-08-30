@@ -1,31 +1,18 @@
 import { createSelectable } from 'react-selectable-fast'
-import React from 'react';
+import React, { memo } from 'react';
 import classNames from 'classnames';
 
-class SelectableItem extends React.Component {
-  shouldComponentUpdate(nextProps, nextState) {
-    if (this.props.isSelected !== nextProps.isSelected) {
-      return true;
-    }
-    if (this.props.isSelecting !== nextProps.isSelecting) {
-      return true;
-    }
-    return false;
-  }
+const Square = createSelectable(({ selectableRef, isSelected, isSelecting, image }) => {
+  const boxClasses = classNames({
+    'box-selected': isSelected,
+    'box-selecting': isSelecting,
+    'box': true
+  });
 
-  render() {
-    const { selectableRef, isSelected, isSelecting, image } = this.props;
-    const boxClasses = classNames({
-      'box-selected': isSelected,
-      'box-selecting': isSelecting,
-      'box': true
-    });
-
-    return !!image ?
-      <img className="user-img sold" ref={selectableRef} src={process.env.PUBLIC_URL + '/img/' + image} alt="sold" /> :
-      <div className={boxClasses} ref={selectableRef}></div>
-
-  }
+  return !!image ?
+    <img className="user-img sold" ref={selectableRef} src={process.env.PUBLIC_URL + '/img/' + image} alt="sold" /> :
+    <div className={boxClasses} ref={selectableRef}></div>
 }
+);
 
-export default React.memo(createSelectable(SelectableItem));
+export default memo(Square);
