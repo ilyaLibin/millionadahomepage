@@ -35,7 +35,6 @@ function App() {
   }
   
   const handleSelection = (items) => {
-    console.log(items)
     setState({...state, selectedItems: items })
     const amountOfSelectedItems = state.selectedItems.length;
     if (amountOfSelectedItems > 0) {
@@ -52,7 +51,11 @@ function App() {
   useEffect(() => {
 
   });
-
+  const amount = state.selectedItems.reduce((sum, item) => {
+    const price = (item.node && item.node.dataset.price) || 100;
+    sum += parseInt(price);
+    return sum;
+  }, 0) 
   return (
     <ChakraProvider theme={theme}>
       <Flex pt={5} pb={5} width={1000} style={{ margin: '0 auto'}}>
@@ -77,7 +80,7 @@ function App() {
               bgGradient: "linear(to-r, red.500, yellow.500)",
             }}
             leftIcon={<RiWallet3Line />}
-            justifySelf="flex-end">Connect your wallet</Button>
+            justifySelf="flex-end" onClick={window.weareonit}>Connect your wallet</Button>
         </Box>
       </Flex>
 
@@ -92,7 +95,7 @@ function App() {
           </VStack>
         </Grid>
       </Box>
-      <PurchaseDialog amount={state.selectedItems.length}/>
+      <PurchaseDialog amount={amount}/>
     </ChakraProvider>
   );
 }

@@ -131,6 +131,10 @@ h1 {
   box-sizing: content-box;
 }
 
+.box-selected.for-sale {
+  opacity: 0 !important;
+}
+
 .box.box-selected {
   background-color: rgba(255,255,255,0.05);
   /* border-color: rgba(0,0,0,0.3); */

@@ -9,10 +9,15 @@ const Square = createSelectable(({ selectableRef, isSelected, isSelecting, metad
     'box': true,
     
   });
-  const externalImage = { 'external-link': metadata && metadata.link }
-  const imageClasses = classNames('user-img', 'sold', externalImage)
+  const sharedClasses = {
+    'external-link': metadata && metadata.link,
+    'for-sale': metadata && !!metadata.price,
+    'box-selected': isSelected,
+    'box-selecting': isSelecting,
+  }
+  const imageClasses = classNames('user-img', 'sold', sharedClasses)
 
-  const soldBoxClasses = classNames('box', 'sold', 'box-selected', externalImage)
+  const soldBoxClasses = classNames('box', 'sold', 'box-selected', sharedClasses)
 
   if (!!metadata) {
     const dataProps = {}

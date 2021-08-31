@@ -15,10 +15,8 @@ function Matrix({ duringSelection, onSelectionFinish }) {
       globalMouse={true}
       allowClickWithoutSelected={true}
       duringSelection={duringSelection}
-      onSelectionClear={() => { }}
       onSelectionFinish={onSelectionFinish}
-      onSelectedItemUnmount={() => {}}
-      ignoreList={['.not-selectable', '.sold', '.on-sale']}>
+      ignoreList={['.not-selectable', '.sold:not(.for-sale)']}>
       <List items={array} />
     </SelectableGroup>
   )
