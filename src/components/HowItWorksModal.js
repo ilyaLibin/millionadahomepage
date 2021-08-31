@@ -24,7 +24,7 @@ const HowItWorksModal = (props) => {
         <ModalCloseButton />
         <ModalBody>
           <h1>Welcome to MillionADAHomepage!</h1>
-          <h2>Here you can buy virtual property with your ADA</h2>
+          <h2>Here you can buy virtual property (measured in pixels) with your ADA</h2>
           <p>
             There are only 1,000,000 pixels.<br />
             1 Pixel = 1 ADA, offered in 10x10 squares.<br />
