@@ -13,6 +13,7 @@ function Matrix({ duringSelection, onSelectionFinish }) {
       enableDeselect={true}
       tolerance={0}
       globalMouse={true}
+      resetOnStart={true}
       allowClickWithoutSelected={true}
       duringSelection={duringSelection}
       onSelectionFinish={onSelectionFinish}
