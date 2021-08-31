@@ -35,6 +35,7 @@ function App() {
   }
   
   const handleSelection = (items) => {
+    console.log(items)
     setState({...state, selectedItems: items })
     const amountOfSelectedItems = state.selectedItems.length;
     if (amountOfSelectedItems > 0) {

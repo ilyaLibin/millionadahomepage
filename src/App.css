@@ -178,3 +178,18 @@ html, body {
   opacity: 0;
   transition: bottom 1s, opacity 1s;
 }
+
+#tooltip {
+    display: none;
+    background: #C8C8C8;
+    margin-left: 28px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1000;
+    max-width:200px;
+    /* height:100px; */
+}
+
+.external-link {
+  cursor: pointer;
+}

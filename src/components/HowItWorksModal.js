@@ -27,8 +27,8 @@ const HowItWorksModal = (props) => {
           <h2>Here you can buy virtual property (measured in pixels) with your ADA</h2>
           <p>
             There are only 1,000,000 pixels.<br />
-            1 Pixel = 1 ADA, offered in 10x10 squares.<br />
-            Your ownership secured with NFT on Cardano blockchain.<br />
+            1 Pixel = 1 ADA sold in 10x10 squares.<br />
+            Your ownership is secured with NFT on Cardano blockchain.<br />
             <img src={process.env.PUBLIC_URL + '/img/Drag_select-1s.gif'} alt="drag select" width="30%" />
           </p>
 
